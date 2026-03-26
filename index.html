@@ -689,56 +689,10 @@ Model 7b is small enough to run in ram.
         <a href="https://github.com/B00merang-Project/Windows-XP" target="_blank">Windows XP theme</a>
         <a href="https://github.com/Rendellan/Windows-XP-Cinnamon-Icons" target="_blank">Windows XP Icons</a>
         
-        Why not using Debian with Trinity Desktop that mimic Windows XP? I don't like Debian Linux.#!/bin/bash
-# Menu script to pick utilities
-clear
-echo "Select a utility:"
-options=("Update" "Browser" "Editor" "Quit" "Ollama" "Msty" "Search" "LocalSend" "Brightness" "PowerOff")
-select opt in "${options[@]}"
-do
-    case $opt in
-        "Update")
-            echo "Running update ..."
-            sudo apt update && sudo apt upgrade -y
-            ;;
-        "Browser")
-            roxterm --title="Browser" -e bash -c "google-chrome" &
-            ;;
-        "Editor")
-            geany & 
-            ;;
-        "Quit")
-            break
-            ;;
-        "Ollama")
-           roxterm --title="Ollama" -e bash -c "ollama serve; exec bash" &
-           ;;
-        "Msty")
-           roxterm --title="Msty" -e bash -c "~/Downloads/Msty.AppImage" &
-           ;;
-        "Search")
-           roxterm --title="DocFetcher" -e bash -c "~/Downloads/DocFetcher/DocFetcher.sh" & 
-           ;;
-        "LocalSend")
-	   roxterm --title="LocalSend" -e bash -c "~/Downloads/LocalSend.AppImage" &
-           ;;
-        "Brightness")
-           backlight-brightness
-           ;;
-        "PowerOff")
-           roxterm --title="PowerOff" -e bash -c "~/Downloads/desktop-session-exit; sleep 5" &
-           ;;
-    
-        *) echo "$REPLY is invalid."; sleep 3;;
-    esac
+        Why not using Debian with Trinity Desktop that mimic Windows XP? 
+		I don't like Debian Linux.
 
-clear
-echo "Select a number:"    
-echo "1.Update, 2.Browser, 3.Editor, 4.Quit, 5.Ollama, 6.Msty, 7.Search, 8.LocalSend, 9.Brightness, 10.PowerOff"
-done
-
-
-        I would rather use Linux Mint with Windows XP theme than Debian with Trinity Desktop
+		I would rather use Linux Mint with Windows XP theme than Debian with Trinity Desktop
         <a href="https://youtu.be/n0kis4Q-VJg?si=CFNwdLK3sJvEBiG9" target="_blank">Visit this video</a>
     </code></pre>
 </p>
