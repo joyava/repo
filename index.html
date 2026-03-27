@@ -730,7 +730,7 @@ Model 7b is small enough to run in ram.
 # Menu script to pick utilities
 clear
 echo "Select a utility:"
-options=("Update" "Browser" "Editor" "Quit" "Ollama" "Msty" "Search" "LocalSend" "Brightness" "PowerOff")
+options=("Update" "Browser" "Editor" "Quit")
 select opt in "${options[@]}"
 do
     case $opt in
@@ -747,31 +747,13 @@ do
         "Quit")
             break
             ;;
-        "Ollama")
-           roxterm --title="Ollama" -e bash -c "ollama serve; exec bash" &
-           ;;
-        "Msty")
-           roxterm --title="Msty" -e bash -c "~/Downloads/Msty.AppImage" &
-           ;;
-        "Search")
-           roxterm --title="DocFetcher" -e bash -c "~/Downloads/DocFetcher/DocFetcher.sh" & 
-           ;;
-        "LocalSend")
-	   roxterm --title="LocalSend" -e bash -c "~/Downloads/LocalSend.AppImage" &
-           ;;
-        "Brightness")
-           backlight-brightness
-           ;;
-        "PowerOff")
-           roxterm --title="PowerOff" -e bash -c "~/Downloads/desktop-session-exit; sleep 5" &
-           ;;
     
         *) echo "$REPLY is invalid."; sleep 3;;
     esac
 
 clear
 echo "Select a number:"    
-echo "1.Update, 2.Browser, 3.Editor, 4.Quit, 5.Ollama, 6.Msty, 7.Search, 8.LocalSend, 9.Brightness, 10.PowerOff"
+echo "1.Update, 2.Browser, 3.Editor, 4.Quit"
 done
 
 
