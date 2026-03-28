@@ -1,813 +1,229 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tech Blog</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            line-height: 1.6;
-        }
-        .entry {
-            border: 1px solid #ddd;
-            padding: 15px;
-            margin-bottom: 20px;
-            border-radius: 5px;
-            background-color: #f9f9f9;
-        }
-        .entry h2 {
-            margin: 0 0 10px;
-        }
-        .entry a {
-            color: #007BFF;
-            text-decoration: none;
-        }
-        .entry a:hover {
-            text-decoration: underline;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tech Blog</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f4f6f8;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 15px;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 1.8rem;
+    }
+
+    .entry {
+      border: 1px solid #ddd;
+      padding: 15px;
+      margin-bottom: 15px;
+      border-radius: 10px;
+      background-color: #ffffff;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+
+    .entry h2 {
+      margin-top: 0;
+      font-size: 1.2rem;
+    }
+
+    a {
+      color: #007BFF;
+      text-decoration: none;
+      word-break: break-word;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    pre {
+      background: #1e1e1e;
+      color: #dcdcdc;
+      padding: 10px;
+      overflow-x: auto;
+      border-radius: 6px;
+      font-size: 0.85rem;
+    }
+
+    code {
+      font-family: monospace;
+    }
+
+    ul {
+      padding-left: 18px;
+    }
+
+    @media (max-width: 600px) {
+      body {
+        font-size: 15px;
+      }
+
+      .entry {
+        padding: 12px;
+      }
+
+      pre {
+        font-size: 0.75rem;
+      }
+    }
+  </style>
 </head>
 <body>
 
- <a href='https://www.free-counters.org/'>Free-Counters.org</a> <script type='text/javascript' src='https://www.freevisitorcounters.com/auth.php?id=d5bba42f865f8e24abc47b959cc9b4f491b8528d'></script>
-<script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/1475291/t/2"></script>
+<div class="container">
+
+<h1>Tech Notes & Experiments</h1>
 
 <div class="entry">
-    <pre><code>
-        News:
-
-        March 26, 2026
-        I saw this GitHub's notice today:
-        On April 24 we'll start using GitHub Copilot interaction data for AI model training 
-        If you want, you can opt out. 
-        Review this update and manage your preferences in your GitHub account settings.
-
-        March 26, 2026: turn a GitHub Repo into a single text file
-        I can attach this text file to ChatGPT or NotebookLM to ask questions
-        <a href="https://blog.stephenturner.us/p/github-repo-to-text-for-llm-input" target="_blank">Visit this guy.</a>
-        
-        
-        March 25, 2026: $1600-$2000 external ai device that run gpt-oss-120b
-        First 500 people can get it at $1600
-        <a href="https://youtu.be/RkzCAaIV_cQ?si=9OT7Zw99UO72qc8v" target="_blank">Visit KickStarter.</a>
-        
-        Feb 10, 2026: new app to manage AppImage
-        <a href="https://www.xda-developers.com/appmanager-is-a-gear-lever-alternative-with-a-macos-aesthetic-and-it-just-hit-version-300/" target="_blank">Visit xda-developers</a>
-        
-        Jan 4, 2026: I add a counter to this website
-        <a href="https://www.freevisitorcounters.com" target="_blank">Get it here.</a>
-        
-        Oct 19, 2025: Vault 2 Book plugin for Obsidian
-        This app condense your entire vault into 1 file
-        Then you use another plugin (Better Export PDF) to convert this textfile into pdf
-        Then you upload this pdf into Notebook LM
-        <a href="https://www.xda-developers.com/move-obsidian-knowledge-vault-to-notebooklm-with-plugins/" target="_blank">Visit this article</a>
-        
-        Oct 15, 2025: new flatpak appstore (Bazaar) 
-         <a href="https://www.zdnet.com/article/this-new-flatpak-app-store-should-be-installed-by-default-on-every-linux-distro/" target="_blank">Visit this article</a>
-
-        Oct 4, 2025:new app that build a website for you
-        <a href="https://www.xda-developers.com/i-made-basic-good-looking-site-in-markdown-with-static-site-generator//" target="_blank">Visit this author</a>
-        <a href="https://youtu.be/DeZjkCtttss?si=JbOD3uqnRM65Lhzh" target="_blank">Visit this video</a>
-        
-        Oct 4, 2025: new file manager (Yazi) 
-        File browsing within a terminal (not GUI)
-        <a href="https://www.xda-developers.com/best-free-fast-file-manager-on-linux/" target="_blank">Visit this xda developer write-up</a>
-
-        Oct 2, 2025: new app (iso image customization tool)
-        <a href=" https://www.xda-developers.com/i-built-a-usb-image-with-everything-i-need-for-the-perfect-linux-setup/" target="_blank">Visit this video</a>
-    
-        Oct 2, 2025
-        New file conversion app (Pandoc) for Obsidian
-        New app (WinBoat) which allow you to run .exe in Linux OS
-        <a href="https://www.zdnet.com/article/this-is-my-new-favorite-way-to-run-windows-apps-on-my-linux-pc-how-it-works/" target="_blank">Visit this guy's video</a>
-
-        Local AI plug in for Obsidian
-        It takes 3 days for it to index 300 files (on i5 CPU)
-        <a href="https://www.howtogeek.com/little-known-linux-apps-i-cant-live-without/" target="_blank">Visit HowToGeek</a>
-
-    </code></pre>
-    </div>
-
-    <div class="entry">
-        <h2>How to install distro & browser</h2>
-<p>      
- <ul>
-    <li>Download Rufus and Ubuntu.iso on a Windows laptop. Plug in USB. Run Rufus. Install Ubuntu to USB.</li>
-    <li>Plug in USB into another computer. Turn on. Press F12. Installing Ubuntu 24.04 onto a second laptop.</li>
-    <li>Once Ubuntu is installed, update the system and install whatever you need.</li>
-    <li>Search for Google Chrome Browser. Download 64 bit .deb (For Debian/Ubuntu).</li> 
-    <li>cd to ~/Downloads then sudo dpkg -i google-chromesomething.deb </li>
- <pre><code>
-        sudo apt update
-        sudo apt upgrade -y
-        cd ~/Downloads
-        sudo dpkg -i google-chromewhatever.deb
-</code></pre>
-</ul>
-
-</p>
-    </div>
-
-    <div class="entry">
-    <h2>How to install syncthing application</h2>
-    <p>I want to keep a backup copy of my work in another computer. This is where syncthing come in.</p>
-<pre><code>
-    sudo apt install syncthing
-    sudo systemctl enable syncthing@joyava.service
-    sudo systemctl start syncthing@joyava.service
-    sudo systemctl status syncthing@joyava.service 
-</code></pre>
+<h2>News</h2>
 <ul>
-<li>On your browser type http://localhost:8384 </li>
-<li>Click setting, click GUI tab, Enter your username and password. Click save. </li>
-<li>Repeat these steps on another ubuntu laptop2 (I have Ubuntu on a Raspberry Pi5) </li>
-<li>Get ID from Ubuntu laptop1 and Enter that ID into Ubuntu laptop2 </li>
-<li>How do you do that? Click action, click show ID, copy to google keep this ID </li>
-<li>On Ubuntu laptop2:</li>
-<li>Copy ID code from google keep</li>
-<li>click "add remote device" at the bottom of the page</li>
-<li>You paste ID code into this pop up window. click save.</li> 
-<li>On Ubuntu laptop1:</li>
-<li>click "add device" on pop up message</li>
-<li>change device name to "laptop2". click save.</li>
-<li>Now you sit back and watch the "remote device" box</li>
-<li>When it shows "connected", you are done</li>
-<li>type ls on your terminal</li>
-<li>you should see a Sync folder along with Downloads and Pictures folder</li>
-<li>The default Sync folder is at ~/Sync </li>
-<li>The "default folder" entry on your browser shows /home/username/Sync </li>
-<li>click "edit" button, it popup a windows with 3 tabs </li>
-<li>click sharing tab, then tick the box </li>
-<li>click file_version tab, choose "simple file version. click save.</li>
-<li>On Ubuntu laptop2:</li>
-<li>click share button</li>
+<li><strong>March 26, 2026:</strong> I built a web app that converts a GitHub repository into a single text file. You can then upload it to ChatGPT or NotebookLM.
+<a href="https://repo2txt.simplebasedomain.com" target="_blank">Visit the web app</a></li>
+
+<li><strong>March 26, 2026:</strong> GitHub announced that Copilot interaction data may be used for AI training starting April 24. You can opt out in your account settings.</li>
+
+<li><strong>March 25, 2026:</strong> External AI device (~$1600–$2000) that can run large models locally.
+<a href="https://youtu.be/RkzCAaIV_cQ" target="_blank">Watch video</a></li>
+
+<li><strong>Feb 10, 2026:</strong> New AppImage manager released.
+<a href="https://www.xda-developers.com/appmanager-is-a-gear-lever-alternative-with-a-macos-aesthetic-and-it-just-hit-version-300/" target="_blank">Read article</a></li>
+
+<li><strong>Jan 4, 2026:</strong> Added a visitor counter to this site.
+<a href="https://www.freevisitorcounters.com" target="_blank">Get one here</a></li>
 </ul>
- 
-</p>
-    </div>
+</div>
 
 <div class="entry">
-        
-<p>
-    <h2>How to install Ollama AI application</h2>
-    <p>Because of privacy, I want to chat offline with a local ai.</p>
-
-<pre><code>
-    sudo apt install curl
-    curl https://ollama.ai/install.sh | sh
-    ollama run phi3
-</code></pre>
-
-</p>
-    </div>
-
-<div class="entry">
-        <h2>How to host a webpage on github for free?</h2>
-        <a href="https://youtu.be/MaqVvXv6zrU?si=SCTTmLKSJeGsNAy0" target="_blank">Visit YouTube Video</a>
-        <p>Sometimes, I just too lazy to follow this guy instructions</p>
-        <p>I just want go straight to github page and edit my index.html file </p>
-        <p>index.html is at main branch which is at https://github.com/user_name/my_repo/branches</p>
-    </div>
-
-<div class="entry">
-        <h2>How to install appimage for Ubuntu?</h2>
-       
-    <p>LM Studio is another application that allows you to chat offline.</p>
+<h2>Install Ubuntu & Chrome</h2>
 <ul>
-    <li>Search for LM Studio on your browser. </li>
-    <li>Download LM_Studio-or-whatever.AppImage </li>
+<li>Download Rufus and the Ubuntu ISO on a Windows laptop.</li>
+<li>Create a bootable USB drive.</li>
+<li>Boot another computer from the USB (press F12).</li>
+<li>Install Ubuntu.</li>
+<li>Download Chrome (.deb) and install:</li>
 </ul>
-<pre><code>
-    For Linux Mint or Ubuntu 22.04
-    sudo apt install libfuse2
-    chmod +x LM_Studio-or-whatever.AppImage
-    ./LM_Studio-or-whatever.AppImage
-    For Ubuntu 24.04
-    https://itsfoss.com/cant-run-appimage-ubuntu/
-    sudo apt install libfuse2t64
-    Ubuntu 24.04 (maybe even earlier version) inhibits you from installing file.appimage
-    https://github.com/electron/electron/issues/42510
-    You need to deactivate appimage restriction imposed by Ubuntu
-    sudo sysctl -w kernel.apparmor_restrict_unprivileged_userns=0
-    Now you can install and run appimage files
-    chmod +x LM_Studio-or-whatever.AppImage
-    ./LM_Studio-or-whatever.AppImage
-</code></pre>
-
-
-</p>
-    </div>
+<pre><code>sudo apt update
+sudo apt upgrade -y
+cd ~/Downloads
+sudo dpkg -i google-chrome.deb</code></pre>
+</div>
 
 <div class="entry">
-        <h2>How to send a notification to your desktop?</h2>
-        <a href="https://youtu.be/WOmrWDwIkH0?si=zBbQWj5AmphFbWt7" target="_blank">Visit YouTube Video</a>
-        <p>Here's my script:
+<h2>Install Syncthing</h2>
+<p>Use Syncthing to sync files between computers.</p>
+<pre><code>sudo apt install syncthing
+sudo systemctl enable syncthing@USER.service
+sudo systemctl start syncthing@USER.service</code></pre>
+<ul>
+<li>Open: http://localhost:8384</li>
+<li>Set username/password.</li>
+<li>Add remote device using Device ID.</li>
+</ul>
+</div>
 
-<pre><code>
-#!/bin/bash
-# cronjob does not has ability to run graphical notification script
-# instead, you put this script in ubuntu startup application
+<div class="entry">
+<h2>Install Ollama (Local AI)</h2>
+<pre><code>sudo apt install curl
+curl https://ollama.ai/install.sh | sh
+ollama run phi3</code></pre>
+</div>
 
+<div class="entry">
+<h2>AppImage on Ubuntu</h2>
+<pre><code>sudo apt install libfuse2
+chmod +x app.AppImage
+./app.AppImage</code></pre>
+<p>For Ubuntu 24.04:</p>
+<pre><code>sudo apt install libfuse2t64
+sudo sysctl -w kernel.apparmor_restrict_unprivileged_userns=0</code></pre>
+</div>
+
+<div class="entry">
+<h2>Desktop Notification Script</h2>
+<pre><code>#!/bin/bash
 while true; do
-# Pop up a notification on Ubuntu window  
-eval "export $(egrep -z DBUS_SESSION_BUS_ADDRESS /proc/$(pgrep -u $LOGNAME gnome-session)/environ)";
-/usr/bin/notify-send "NOTIFICATION" "It is time to take a break!" -u critical -i mail-message-new 
-
-# Activate a voice notification at a specific interval
-vlc --play-and-exit ~/Downloads/reminder1.wav
-
-sleep 3600   # 3600 seconds = 60 min
-
-done
-</code></pre>
-    
-</p>
-    </div>
+notify-send "Reminder" "Time to take a break!"
+sleep 3600
+done</code></pre>
+</div>
 
 <div class="entry">
-        <h2>How to install LocalSend app?</h2>
-        <a href="https://news.itsfoss.com/localsend/" target="_blank">Visit Link</a>
-        <p>Using LocalSend to wirelessly transfer files over Wi-Fi from smartphone to Linux-powered laptop. </p>
-    </div>
+<h2>Fix Date & Time (Linux)</h2>
+<pre><code>sudo apt install ntpdate
+sudo ntpdate pool.ntp.org</code></pre>
+</div>
 
 <div class="entry">
-        <h2>How to fix date & time problem in Linux Mint</h2>
-        <p>I got help from ChatGPT
-    <pre><code>
-    Check and sync with NTC server
-    sudo apt install ntpdate
-    sudo ntpdate pool.ntp.org
-    install Fake-hwclock from the appstore
-    If all fail, manually run command line
-    sudo date --set="Thu Jan 12 11:30:46"
-    Because sudo require password, I asked ChatGPT:
-    How to run sudo command "sudo ntpdate pool.ntp.org" without being prompted for a password? 
-    You can configure the sudoers file to allow specific commands to be executed without authentication. 
-    Here's how you can do it:
-    sudo visudo
-    your_username ALL=(ALL) NOPASSWD: /usr/sbin/ntpdate
-    Save and Exit
-    Run the command 
-    sudo /usr/sbin/ntpdate pool.ntp.org
-    I put the command in a script
-    #!/bin/bash
-    sudo /usr/sbin/ntpdate pool.ntp.org
-    Finally, it works. 
-    I do not need to run daily sudo date --set="Thu Jan 12 11:30:46"
-    </code></pre>
-
-</p>
-    </div>
-
- <div class="entry">
-        <h2>How to install Windows 95 theme on Linux Mint XFCE desktop</h2>
-        <a href="https://youtu.be/j5UeSj2F-yc?si=VgfVDe2rgDgRW5Zt" target="_blank">Visit YouTube</a>
-        <p>This YouTube video will show you how to install Windows95 theme on an ubuntu base distro with xfce.</p>
-    </div>
+<h2>Quick System Update Alias</h2>
+<pre><code>alias update='sudo apt update && sudo apt upgrade -y'</code></pre>
+</div>
 
 <div class="entry">
-        <h2>How to fix Update Manager error in Linux Mint?</h2>
-        <p>When I click on this shield icon, I get this ERROR message:
-    <pre><code>
-An error occurred during the signature verification. 
-The repository is not updated and the previous index files will be used. 
-GPG error: https://fastly.linuxmint.io 
-wilma Release: The following signatures were invalid: BADSIG A6616109451BBBF2 
-Linux Mint Repository Signing Key <root@linuxmint.com>Failed to fetch https://fastly.linuxmint.io/dists/wilma/Release.gpg  
-The following signatures were invalid: BADSIG A6616109451BBBF2 
-Linux Mint Repository Signing Key <root@linuxmint.com>
-Some index files failed to download. They have been ignored, or old ones used instead.
-answer:
-I go to update manager. Edit, software source. 
-Press on the button: restore the default setting.
-It seems to fix error.
-    </code></pre>
-
-</p>
-    </div>
-
-    <div class="entry">
-        <h2>How to upgrading from Linux Mint 22 to 22.1</h2>
-        <p>Update Manager Shield told me 22.1 is available.
-    <pre><code>
-        I was hesitated to upgrade because I don't want to loose Chicago95 theme.
-        But, I really want the new blue light blocking feature. 
-        Fortunately, the Windows95 theme is still intact after the upgrade.
-        The upgrade duration is about 2 minutes.
-        All the icons in the system stray look more beautiful than before.
-    </code></pre>
-</p>
-    </div>
-
-    <div class="entry">
-        <h2>How to update linux os?</h2>
-        <p>Add this line to ~/.bashrc</p>
-        <p>alias update='sudo apt update && sudo apt upgrade -y' </p>
-        <p>Source ~/.bashrc</p>
-        <p>$ ./update </p>
-    </div>
-    
-    <div class="entry">
-        <h2>How to fix an over heated laptop?</h2>
-        <a href="https://amzn.to/39BnQjB" target="_blank">Visit Amazon</a>
-        <p>After I applied some Grizzly Thermal Paste on the CPU,</p>
-        <p>The temperature drops by 10 degree. Success!</p>
-    </div>
-
-    <div class="entry">
-        <h2>Eye pain from computer monitor is real</h2>
-        <p>Buy a BenQ Monitor or Special Glasses
-    <pre><code>
-        This monitor has 4 buttons at the bottom right:
-        1. The left most button is for switching between monitors
-        2. The next button is for blocking blue light
-        3. The next button is a joystick (idk how to use it)
-        4. The right most button is for power on/off
-    </code></pre>
-</p>
-    </div>
-    
-    <div class="entry">
-        <h2>How to OverClock Raspberry Pi 5</h2>
-
-    <pre><code>
-        Over clocking is base on luck.
-        Some Raspberry Pi5 can be overclock to 3 GHz
-        Unfortunately for me,my RPI5 can only get to 2.8 GHz
-        I regret buying it.
-    </code></pre>
-</p>
-    </div>
-    
-    
-    <div class="entry">
-        <h2>How to use BenQ's joystick?</h2>
-        <p>
-    <pre><code>
-        Even with blue light off, monitor light still hurts my eyes.
-        I am about to return this monitor, but I am giving one last try.
-        There is a tiny joystick under neath the display
-        Instead of moving North, South, East, West, I accidentally pushed up.
-        Suddenly a menu appeared which give me several options:
-        I changed the brightness to 0% and blue-light-blocking to maximum.
-        It seems to work pretty good. My eyes are not hurting any more.
-        Guess what. I plugged in my Chromebook's output to the second HDMI input.
-        Suddenly, I have a giant e-ink screen to read whatever I want. WOW.
-        The point is: eye pain from computer work is real.
-    </code></pre>
-</p>
-    </div>
-
-    <div class="entry">
-        <h2>How to fix sluggish mouse?</h2>
-        <p>Currently, my mouse is attached to a hub/dock
-    <pre><code>
-        Problem: the mouse cursor is very sluggish.
-        Answer: instead of connecting a mouse-adaptor directly into the Anker-dock/hub,
-        I connect the mouse-adaptor to a long usb cable which connect to the Anker-dock
-        Problem solved. (maybe interference problem)
-    </code></pre>
-</p>
-    </div>
-
-    <div class="entry">
-        <h2>What to do with old computer?</h2>
-        <p>install Antix Linux for fast legacy/MBR boot
-    <pre><code>
-        My lenovo laptop die. Now, I use an old i3 DDR3-RAM Toshiba laptop
-        Since windows 11 takes forever to boot, I install Antix Linux 26
-        Version 26 is released in March 2026. It is base on Debian 13.
-        It only allows .deb and .appimage software installation (no flatpak, no snap)
-        I think I can install flatpak and snap, but it will slow down Antix.
-    </code></pre>
-</p>
-    </div>
+<h2>Fix Overheating Laptop</h2>
+<p>Applying thermal paste reduced CPU temperature by ~10°C.</p>
+</div>
 
 <div class="entry">
-        <h2>What is the Cheapest way to run Deepseek:671B on your PC?</h2>
-        <p>Note: this swapfile method is EXTREMELY slowly!
-    <pre><code>
-        
-The basic steps are:
-Install a 2tb SSD
-Install Ubuntu with over 1TB of swap
-Install Ollama
-Use Ollama to run Deepseek r1 671b
-
-This computer's approximate specs:
-AMD Ryzen 7 5700
-16gb generic ram
-No gpu, just whatever is built in on the Ryzen
-2tb WD_Black SN770 NVMe SSD
-
-The results:
-About 50 seconds per token, 0.02token/second
-About 15mins from prompt to first output token
-Full response took overnight
-
-Things to note:
-SSDs have finite write lifespanhttps://www.makeuseof.com/docfetcher-find-every-document-at-work/
-This output used ~6TB of the lifetime 1200TB of writes, 
-meaning we used up about 0.5% of the hard drive's total lifespan creating a single response
-It is probably faster/cheaper to use the cloud if you want cheap outputs
-You can have a ton of fun with the smaller 7b model
-Model 7b is small enough to run in ram.
-<a href="https://youtu.be/-LvT8CktkWc?si=dUSSHLrJxz9aj9ix" target="_blank">Visit this YouTuber</a>
-        
-    </code></pre>
-</p>
-    </div>
+<h2>Eye Strain Tips</h2>
+<ul>
+<li>Lower brightness</li>
+<li>Enable blue light filter</li>
+<li>Use monitor settings properly (joystick control)</li>
+</ul>
+</div>
 
 <div class="entry">
-        <h2>What apps can communicate with Ollama via API?</h2>
-        <p>Answer: anythingllm, msty, newelle, gpt4all
-    <pre><code>
-        Step 1: download at https://anythingllm.com/desktop
-        Step 2: run this script: curl -fsSL https://cdn.anythingllm.com/latest/installer.sh | sh
-        Step 3: on your home directory, run ./AnythingLLMDesktop/start
-
-        Comment:
-        Notebook-LM is better than AnythingLLM, MSTY, and Newelle, but NotebookLM send all your private documents to some online servers.
-        AnythingLLM, MSTY, GPT4all, and Newelle keep everything locally on your PC
-        Anything LLM and MSTY are top contenders for RAG.
-    </code></pre>
-</p>
-    </div>
-
-
- <div class="entry">
-        <h2>How to turn off monitor?</h2>
-        <p>Answer: download at Spices Web Site (require Cinnamon Desktop Environment)
-    <pre><code>
-        Step 1: <a href="https://cinnamon-spices.linuxmint.com/" target="_blank">Download here</a>
-        Step 2: Unzip and extract folder turn-off-monitor@zablotski to ~/.local/share/cinnamon/applets/
-        Step 3: Enable the applet in System Settings -> Applets
-        Step 3a: first, click on download tab 
-        Step 3b: second, click on manage tab 
-        Step 3c: then, click on "+ button". You should see a new icon on your panel
-    </code></pre>
-</p>
-    </div>
-
- <div class="entry">
-        <h2>How to install CPU temperature icon on your panel?</h2>
-        <p>Answer: download at Spice Web Site (require Cinnamon Desktop Environment)
-    <pre><code>
-        Step 1: <a href="https://cinnamon-spices.linuxmint.com/" target="_blank">Download  here</a>
-        Step 2: Unzip and extract this particular folder to ~/.local/share/cinnamon/applets/
-        Step 3: Enable the applet in System Settings -> Applets
-        Step 3a: first, click on download tab 
-        Step 3b: second, click on manage tab 
-        Step 3c: then, click on "+ button". You should see a new icon on your panel
-    </code></pre>
-</p>
-    </div>
+<h2>Slow Mouse Fix</h2>
+<p>If your mouse feels sluggish when connected to a dock, try using a USB extension cable to reduce interference.</p>
+</div>
 
 <div class="entry">
-        <h2>How did I upgrade my laptop?</h2>
-    <p>
-    <pre><code>
-        Step 1: upgrade SSD to 1T
-        Step 2: upgrade RAM to 36GB
-        Step 3: apply Thermal Grizzly paste on CPU
-        Step 4: vaccuum and clean the fan
-        Step 5: add CPU temperature monitor app at the bottom panel
-        Step 6: add "turn-off-monitor" app at the bottom panel
-    </code></pre>
-    </p>
-    </div>
-
-
- <div class="entry">
-        <h2>How to import ChatGPT into NotebookLM</h2>
-        <p>
-    <pre><code>
-        Answer: combine all your files into one big file. then upload to Notebook LM 
-        <a href="https://www.xda-developers.com/kortex-notebooklm-chrome-extension/" target="_blank">Visit xda-developer</a>
-        
-    </code></pre>
-</p>
-    </div>
-    
-<div class="entry">
-        <h2>How to grep/search?</h2>
-        <p>Answer: DocFetcher app 
-    <pre><code>
-        DocFetch app is better than manually grep from the terminal
-        <a href="https://https://www.makeuseof.com/docfetcher-find-every-document-at-work/" target="_blank">Visit makeuseof.com</a>
-    </code></pre>
-</p>
-    </div>
+<h2>Old Computer Use</h2>
+<p>Install lightweight Linux (e.g., antiX) for better performance on older hardware.</p>
+</div>
 
 <div class="entry">
-        <h2>How to rename a picture while viewing on Linux Mint Cinammon?</h2>
-        <p>Answer: pix app (imager viewer)
-    <pre><code>
-        Step 1: I don't see any button or menu option for renaming
-        Step 2: Answer: press F2 for renaming picture filename.g
-    </code></pre>
-</p>
-    </div>
+<h2>DeepSeek 671B (Local Experiment)</h2>
+<p>Running large models locally using swap is extremely slow and wears out SSDs quickly.</p>
+</div>
 
 <div class="entry">
-        <h2>How to compare CPU from AMD and INTEL?</h2>
-        <p>Google give me this:
-    <pre><code>
-        What is AMD CPU equivalent to intel i5 10th gen?
-        AMD Ryzen 5 in 3600 series is equivalent to i5 10th gen
-        Currently, Mini PC Ryzen 7 6800H with 32G RAM is about $318
-
-        What CPU is the equivalent to Steam Deck's CPU?
-        AMD Ryzen 3 4300U and Intel I3 CPU
-        OMG,Qwen3-embedding:0.6b indexing took 2000 minutes to complete on SteamDeck or Laptop with i3-CPU
-
-        The point is: to run a local ai, you need at least i5-i7 (ryzen 5-7) with 32G RAM
-      </code></pre>
-</p>
-    </div>
+<h2>Useful Apps with Ollama</h2>
+<ul>
+<li>AnythingLLM</li>
+<li>GPT4All</li>
+<li>Msty</li>
+<li>Newelle</li>
+</ul>
+</div>
 
 <div class="entry">
-        <h2>How to copy and paste from a search output in Obsidian?</h2>
-        <p>Answer: search and press a tiny icon at bottom left
-    <pre><code>
-        Step 1: after put a search term in obsidian, I want to copy and paste the result
-        Step 2: underneath the search field, you click on a tiny icon. 
-        Step 3: then, pick "copy search result" option
-        Note: this feature is better than the grep command in linux
-    </code></pre>
-</p>
-    </div>
+<h2>Upgrade Laptop</h2>
+<ul>
+<li>Upgrade SSD</li>
+<li>Increase RAM</li>
+<li>Clean fan</li>
+<li>Apply thermal paste</li>
+</ul>
+</div>
 
-    <div class="entry">
-        <h2>How to install a GUI flatpak appstore on Linux Mint?</h2>
-        <p>Run: flatpak install flathub io.github.kolunmi.Bazaar
-    <pre><code>
-        Step 1:  <a href="https://www.zdnet.com/article/this-new-flatpak-app-store-should-be-installed-by-default-on-every-linux-distro//" target="_blank">Visit this article</a>
-        Step 2: run this command on your terminal:
-        Step3: flatpak install flathub io.github.kolunmi.Bazaar
-    </code></pre>
-</p>
-    </div>
+</div>
 
-    <div class="entry">
-        <h2>What embedded AI is better than nomic-embeded-text?</h2>
-        <p>Answer: this robin guy is providing an 8K model for you
-    <pre><code>
-        Step 1: instead of going through all the technical stuff
-        Step 2: just run this: ollama pull RobinBially/nomic-embed-text-8k
-        Step 3:  <a href="https://ollama.com/RobinBially/nomic-embed-text-8k:latest" target="_blank">Visit his Github</a>
-        Context: I am using Obsidian and Smart Second Brain plug-in. 
-                 The default nomic-embeded-text is 2K which is too small to be useful.
-                 This guy's nomic-embed-text-8k is much better, 
-                 but it is still too slow and not good enough
-                 Qwen3-embedding is much better (32K context length)
-                 Anyway, with S2B plug-in, Obsidian is kinda like Google notebook-LM. 
-                 But, I give up on all of them cuz too slow:
-                 Newelle AI, MSTY, S2B-obsidian-ollama
-                 
-    </code></pre>
-</p>
-    </div>
-
-<div class="entry">
-        <h2>How to transfer file between Virtualbox and your PC?</h2>
-        <p>Answer: use localsend app and change network to bridge
-    <pre><code>
-        Step 1: instead of going through all Virtualbox technical stuffs
-        Step 2: just install localsend on both your PC and your virtualbox OS
-        Step 3: change network setting from NAB to Bridge (allow same wifi network)
-        Step 4: syncthing is another option for sharing files
-    </code></pre>
-</p>
-    </div>
-
-<div class="entry">
-        <h2>Topic 1: What is my accessment of smart second brain ai inside obsidian?</h2>
-        <p>Topic 2: How to install Kerakeep-bookmark on your PC?
-    <pre><code>
-        1: Is running Ollama-ai locally any good? better than paying $20/month for ai service
-        2: Smart second brain took 8 hours to index 350 files on my i5/36G-RAM laptop
-        3: At the end of the day, I prefer Obsidian build in search function
-        
-        OFF TOPIC: https://github.com/ivan-hc/VirtualBox-appimage
-        1: How to install Kara-keep (bookmark app) on Linux Mint?
-        2: The only way to install it is via a container
-        3. Reference: <a href="https://docs.karakeep.app/installation/debuntu/" target="_blank">Visit Karakeep</a>
-
-    </code></pre>
-</p>
-    </div>
-
-    <div class="entry">
-        <h2>How to search in Obsidian?</h2>
-        <p>Comment: how to search within a working document?
-    <pre><code>
-        Step 1: control F to search your active document
-        Step 2: the magnification glass (search) is like grep in linux
-    </code></pre>
-</p>
-    </div>
-
-    <div class="entry">
-        <h2>How to turn off the screen when close lid in Ubuntu Linux?</h2>
-        <p>Q: Can the 'lid close' switch be configured somehow to simply turn off the screen but otherwise the laptop is running as normal?
-    <pre><code>
-        Step 1: 
-        <a href="https://unix.stackexchange.com/questions/248033/configure-linux-laptop-to-switch-off-screen-but-otherwise-remain-running-when-li" target="_blank">Visit</a>
-        Edit the grub config sudo nano /etc/default/grub. Change the line
-        I've got it working by adding consoleblank=5 to the kernel options and changing the HandleLidSwitch and HandleLidSwitchExternalPower to ignore in the /etc/systemd/logind.conf.
-
-        Edit the grub config sudo nano /etc/default/grub. Change the line
-        GRUB_CMDLINE_LINUX_DEFAULT="quiet consoleblank=5"
-
-        This turns the screen off after 5 seconds. When you hit the keyboard, it will turn on again.
-        Run sudo update-grub to activate your changes.
-
-        Next:
-        Edit the sudo nano /etc/systemd/logind.conf and change HandleLidSwitch and HandleLidSwitchExternalPower to ignore and remove the #.
-        HandleLidSwitch=ignore HandleLidSwitchExternalPower=ignore
-        Now reboot
-
-        Xxxxx
-
-        This worked for me
-        nano ~/.bash_profile
-
-
-        if [[ $(tty) == /dev/tty1 ]]; then setterm --blank 1 --powerdown 2 --powersave on fi
-
-
-    </code></pre>
-</p>
-    </div>
-
-  <div class="entry">
-        <h2>What to do if you see this error on your steam deck?</h2>
-        <p>Upon booting my Steam Deck, a scary error message pop up
-    <pre><code>
-        x x x x x x x x x x x x  x x x x x x x x x x x  x x x x x x x x 
-        Problem: I got this pop up msg because I try to Dual Boot
-        
-        Upon reboot, this SCARY message pop up: "fTPM data error. 
-        Select [No] to keep fTPM data and continue boot or
-        Select [Yes] to reset fTPM. 
-        If BitLocker or encryption is enabled, the system will not boot without a recovery key.
-        Yes or No"
-        
-        What to do? don't click YES because you will brick your Steam Deck.
-        By default Windows 11 automatically sets Bitlocker and encryption enable. 
-        My answer: boot to bios. In Menu/Advance/Peripheral, I disable fTPM (firmware TPM). 
-        When I rebooted, it did not show that scary error message again. 
-
-        Update: imo, if I replace the current ssd with the original ssd,
-        I should get back to the original state with no scary message pop up!
-        So, you should keep your original SSD in a safe place just in case you need it 
-    </code></pre>
-</p>
-    </div>
-
-  <div class="entry">
-        <h2>How to install Windows XP theme on Linux Mint?</h2>
-        <p>Comment: I love the start menu
-    <pre><code>
-        How to make Linux Mint Cinnamon Desktop look like Windows XP?
-        
-        Step 1: you drop a themed Windows-XP folder into ~/.theme
-        Step 2: you drop a Windows-XP-Cinnamon-Icon folder into ~/.icon
-        That is it. You are done. You now have a Window-XP desktop.
-        How? Where to download?
-        Click on the links below to download those 2 folders
-        <a href="https://youtu.be/q0pUt_e2CWI?si=Pyfo-mpsPwohjoGN" target="_blank">Visit KuleGuy on YouTube</a>
-        <a href="https://github.com/B00merang-Project/Windows-XP" target="_blank">Windows XP theme</a>
-        <a href="https://github.com/Rendellan/Windows-XP-Cinnamon-Icons" target="_blank">Windows XP Icons</a>
-        
-        Why not using Debian with Trinity Desktop that mimic Windows XP? 
-		I don't like Debian Linux.
-
-		I would rather use Linux Mint with Windows XP theme than Debian with Trinity Desktop
-        <a href="https://youtu.be/n0kis4Q-VJg?si=CFNwdLK3sJvEBiG9" target="_blank">Visit this video</a>
-    </code></pre>
-</p>
-    </div>
-
-<div class="entry">
-        <h2>How to search (grep) the easy way?</h2>
-        <p>Comment: new app (Clapgrep)
-    <pre><code>
-        Step 1: you can install it from flatpak
-        Step 2: I install it from Bazaar appstore
-    </code></pre>
-</p>
-    </div>
-
-<div class="entry">
-        <h2>How to fix the long boot time for both windows/linux</h2>
-        <p>Comment: in linux, systemd-analyze tells me userspace is 1 min 8 sec
-    <pre><code>
-        Step 1: firmware takes 6 seconds, usespace takes 1 min 8 sec
-        Step 2: userspace is referring to the ancient "HDD disk" inside Toshiba laptop
-        Step 3: we can not make that ancient hard disk to boot faster.
-        Step 4: we need to buy a new SSD to improve userpace (to boot faster)
-    </code></pre>
-</p>
-    </div>
-
-
-
-<div class="entry">
-        <h2>How to make Antix a little easier for me?</h2>
-        <p>Comment: i made this script to help me with daily task
-    <pre><code>
-#!/bin/bash
-# Menu script to pick utilities
-clear
-echo "Select a utility:"
-options=("Update" "Browser" "Editor" "Quit")
-select opt in "${options[@]}"
-do
-    case $opt in
-        "Update")
-            echo "Running update ..."
-            sudo apt update && sudo apt upgrade -y
-            ;;
-        "Browser")
-            roxterm --title="Browser" -e bash -c "google-chrome" &
-            ;;
-        "Editor")
-            geany & 
-            ;;
-        "Quit")
-            break
-            ;;
-    
-        *) echo "$REPLY is invalid."; sleep 3;;
-    esac
-
-clear
-echo "Select a number:"    
-echo "1.Update, 2.Browser, 3.Editor, 4.Quit"
-done
-
-
-    </code></pre>
-</p>
-    </div>
-
-<div class="entry">
-        <h2>is there an alternative app to Obsidian?</h2>
-        <p>Comment: Yes, go download thiss Markdown app
-    <pre><code>
-        .deb file: <a href="https://github.com/marktext/marktext/releases" target="_blank">Visit GitHub</a>
-        appimage file: <a href="https://www.appimagehub.com/p/1257070" target="_blank">Visit AppImageHub.com</a>
-    </code></pre>
-</p>
-    </div>    
-
-<div class="entry">
-        <h2>is there an AppStore for AppImage?</h2>
-        <p>Comment: yes, go to AppImageHub
-    <pre><code>
-         <a href="https://www.appimagehub.com/p/1257070" target="_blank">Visit AppImageHub.com</a>
-    </code></pre>
-</p>
-    </div>
-
-<div class="entry">
-        <h2>How to install docker?</h2>
-        <p>Comment: this is a script that install docker
-    <pre><code>
-         <a href="https://www.appimagehub.com/p/1257070" target="_blank">Visit GitHub</a>
-        Note 1: there are a lot of scripts that install docker container for you.
-        Note 2: I have not tested this script yet. I don't know if it work or not.
-		Note 3: I don't install docker because Antix is systemd free. Docker needs Linux distro with systemd (Ubuntu)
-    </code></pre>
-</p>
-    </div>
-
-<div class="entry">
-        <h2>Title</h2>
-        <p>Comment: 
-    <pre><code>
-        Step 1: 
-        Step 2: 
-        Step 3: 
-    </code></pre>
-</p>
-    </div>
-
-<div class="entry">
-        <h2>Title</h2>
-        <p>Comment: 
-    <pre><code>
-        Step 1: 
-        Step 2: 
-        Step 3: 
-    </code></pre>
-</p>
-    </div>
-	
 </body>
 </html>
