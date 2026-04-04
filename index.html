@@ -239,7 +239,7 @@ notify-send "Reminder" "Time to take a break!"
 sleep 3600
 done</code></pre>
 
-<li>Example: eval "export $(egrep -z DBUS_SESSION_BUS_ADDRESS /proc/$(pgrep -u $LOGNAME gnome-session)/environ)";
+<li>Example of notify-send: eval "export $(egrep -z DBUS_SESSION_BUS_ADDRESS /proc/$(pgrep -u $LOGNAME gnome-session)/environ)";
 /usr/bin/notify-send "NOTIFICATION" "It is time to take a break!" -u critical -i mail-message-new 
 </li>
   
