@@ -94,8 +94,18 @@
 <h2>News</h2>
 <ul>
 
+<li><strong>April 4, 2026:</strong> Install docker container.
+      <a href="https://www.appimagehub.com/p/1257070" target="_blank">Visit this page</a>
+  
+<li><strong>April 4, 2026:</strong> MarkText (Obsidian alternative).
+      <a href="https://github.com/marktext/marktext/releases" target="_blank">Visit GitHub</a>
+      <a href="https://www.appimagehub.com/p/1257070" target="_blank">Visit this page</a>
+  
+<li><strong>April 4, 2026:</strong> Install Karakeep via docker container.
+      <a href="https://docs.karakeep.app/installation/debuntu/" target="_blank">Visit this page</a>
+  
 <li><strong>March 30, 2026:</strong> Example for condensing a GitHub Repo: I enter my repo URL "https://github.com/joyava/repo" then press a button.
-        <a href="repo2txt.simplebasedomain.com" target="_blank">Visit this webapp</a>
+      <a href="repo2txt.simplebasedomain.com" target="_blank">Visit this webapp</a>
 
 <li><strong>March 30, 2026:</strong> GUI for lemonade server. It requires 32G RAM.
 <a href="https://www.phoronix.com/news/AMD-GAIA-0.17-Agent-UI" target="_blank">read article</a></li> 
@@ -142,8 +152,6 @@
   
  <li><strong>Oct 2, 2025:</strong> Obsidian plug-in: local AI.
         <a href="https://www.howtogeek.com/little-known-linux-apps-i-cant-live-without/" target="_blank">Visit HowToGeek</a>
-
-
 
 </ul>
 </div>
@@ -210,20 +218,17 @@ ollama run phi3</code></pre>
 
 <div class="entry">
 <h2>How to host a webpage on github for free?</h2>
-    <a href="https://youtu.be/MaqVvXv6zrU?si=SCTTmLKSJeGsNAy0" target="_blank">Visit YouTube Video</a>
-    Sometimes, I just too lazy to follow this guy instructions
-    I just want go straight to github page and edit my index.html file 
-    index.html is at main branch which is at https://github.com/user_name/my_repo/branches
-    </div>
+<ul>
+<li>YouTube tutorial: <a href="https://youtu.be/MaqVvXv6zrU?si=SCTTmLKSJeGsNAy0" target="_blank">Visit YouTube Video</a> </li>
+<li>Alternative: I can directly modify index.html at https://github.com/user_name/my_repo/</li>
+</ul>
+</div>
   
 <div class="entry">
 <h2>AppImage on Ubuntu</h2>
 <pre><code>sudo apt install libfuse2
 chmod +x app.AppImage
 ./app.AppImage</code></pre>
-<p>For Ubuntu 24.04:</p>
-<pre><code>sudo apt install libfuse2t64
-sudo sysctl -w kernel.apparmor_restrict_unprivileged_userns=0</code></pre>
 </div>
 
 <div class="entry">
@@ -233,9 +238,20 @@ while true; do
 notify-send "Reminder" "Time to take a break!"
 sleep 3600
 done</code></pre>
+
+<li>Example: eval "export $(egrep -z DBUS_SESSION_BUS_ADDRESS /proc/$(pgrep -u $LOGNAME gnome-session)/environ)";
+/usr/bin/notify-send "NOTIFICATION" "It is time to take a break!" -u critical -i mail-message-new 
+</li>
+  
 </div>
 
 <div class="entry">
+    <h2>How to install LocalSend app?</h2>
+    <li> <a href="https://news.itsfoss.com/localsend/" target="_blank">Visit Link</a> </li>
+    <li>Using LocalSend to wirelessly transfer files over Wi-Fi from smartphone to laptop. </li>
+    </div>
+  
+<div class="entry"li
 <h2>Fix Date & Time (Linux)</h2>
 <pre><code>sudo apt install ntpdate
 sudo ntpdate pool.ntp.org</code></pre>
@@ -244,6 +260,10 @@ sudo ntpdate pool.ntp.org</code></pre>
 <div class="entry">
 <h2>Quick System Update Alias</h2>
 <pre><code>alias update='sudo apt update && sudo apt upgrade -y'</code></pre>
+<li>Example: ddd this line to ~/.bashrc</li>
+        <li>alias update='sudo apt update && sudo apt upgrade -y' </li>
+        <li>Source ~/.bashrc</li>
+        <li>$ ./update </li>
 </div>
 
 <div class="entry">
@@ -279,7 +299,10 @@ sudo ntpdate pool.ntp.org</code></pre>
 <div class="entry">
 <h2>DeepSeek 671B (Local Experiment)</h2>
 <p>Running large models locally using swap is extremely slow and wears out SSDs quickly.
-Some people do this because they don't have a lot of RAM (more than 256G of RAM)
+Some people do this because they don't have a lot of RAM (more than 256G of RAM).
+Example: buy 2 TB SSD, install linux with 1T of swap. Then: ollama run Deepseek-R1:671b
+Then you wait for 12 hours for 1 query. From prompt to first output token, it takes 15 min.
+After 100-200 queries, your ssd is permanently damaged. 
 </p>
 </div>
 
@@ -297,12 +320,76 @@ Some people do this because they don't have a lot of RAM (more than 256G of RAM)
 <h2>Upgrade Laptop</h2>
 <ul>
 <li>Upgrade SSD</li>
-<li>Increase RAM</li>
-<li>Clean fan</li>
+<li>Upgrade RAM</li>
+<li>Remove dirt from fan</li>
 <li>Apply thermal paste</li>
 </ul>
 </div>
 
+<div class="entry">
+<h2>How to grep the easy way?</h2>
+<ul>
+<li>Download DocFetcher: </li>
+<li><a href="https://https://www.makeuseof.com/docfetcher-find-every-document-at-work/" target="_blank">Visit makeuseof.com</a> </li>
+<li>Alternative app is Clapgrep.</li>
+<li>You can down load it from flatpak appstore (Bazaar).</li>
+</ul>
+</div>
+
+<div class="entry">
+<h2>How to transfer file between Virtualbox and your PC? </h2>
+<ul>
+<li>use localsend app and change network from NAB to bridge </li>
+</ul>
+</div>
+
+<div class="entry">
+<h2>How to install VirtualBox the easy way?</h2>
+<ul>
+<li>Download here: </li>
+<li><a href="https://github.com/ivan-hc/VirtualBox-appimage" target="_blank">Visit makeuseof.com</a> </li>
+</ul>
+</div>
+
+<div class="entry">
+<h2>My startup script for Antix Linux Distro</h2>
+<ul>
+<pre><code>
+#!/bin/bash
+# Menu script to pick utilities
+clear
+echo "Select a utility:"
+options=("Update" "Browser" "Editor" "Quit")
+select opt in "${options[@]}"
+do
+    case $opt in
+        "Update")
+            echo "Running update ..."
+            sudo apt update && sudo apt upgrade -y
+            ;;
+        "Browser")
+            roxterm --title="Browser" -e bash -c "google-chrome" &
+            ;;
+        "Editor")
+            geany & 
+            ;;
+        "Quit")
+            break
+            ;;
+    
+        *) echo "$REPLY is invalid."; sleep 3;;
+    esac
+
+clear
+echo "Select a number:"    
+echo "1.Update, 2.Browser, 3.Editor, 4.Quit"
+done
+
+</code></pre>
+  
+</ul>
+</div>
+  
 </div>
 
 </body>
