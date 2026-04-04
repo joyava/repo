@@ -169,10 +169,35 @@ sudo dpkg -i google-chrome.deb</code></pre>
 <pre><code>sudo apt install syncthing
 sudo systemctl enable syncthing@USER.service
 sudo systemctl start syncthing@USER.service</code></pre>
+  
 <ul>
 <li>Open: http://localhost:8384</li>
 <li>Set username/password.</li>
 <li>Add remote device using Device ID.</li>
+
+<li>Example: on your browser type http://localhost:8384 </li>
+<li>Click setting, click GUI tab, Enter your username and password. Click save. </li>
+<li>Repeat these steps on another ubuntu laptop2 (I have Ubuntu on a Raspberry Pi5) </li>
+<li>Get ID from Ubuntu laptop1 and Enter that ID into Ubuntu laptop2 </li>
+<li>How do you do that? Click action, click show ID, copy to google keep this ID </li>
+<li>On Ubuntu laptop2:</li>
+<li>Copy ID code from google keep</li>
+<li>click "add remote device" at the bottom of the page</li>
+<li>You paste ID code into this pop up window. click save.</li> 
+<li>On Ubuntu laptop1:</li>
+<li>click "add device" on pop up message</li>
+<li>change device name to "laptop2". click save.</li>
+<li>Now you sit back and watch the "remote device" box</li>
+<li>When it shows "connected", you are done</li>
+<li>type ls on your terminal</li>
+<li>you should see a Sync folder along with Downloads and Pictures folder</li>
+<li>The default Sync folder is at ~/Sync </li>
+<li>The "default folder" entry on your browser shows /home/username/Sync </li>
+<li>click "edit" button, it popup a windows with 3 tabs </li>
+<li>click sharing tab, then tick the box </li>
+<li>click file_version tab, choose "simple file version. click save.</li>
+<li>On Ubuntu laptop2:</li>
+<li>click share button</li>
 </ul>
 </div>
 
@@ -183,6 +208,14 @@ curl https://ollama.ai/install.sh | sh
 ollama run phi3</code></pre>
 </div>
 
+<div class="entry">
+<h2>How to host a webpage on github for free?</h2>
+    <a href="https://youtu.be/MaqVvXv6zrU?si=SCTTmLKSJeGsNAy0" target="_blank">Visit YouTube Video</a>
+    Sometimes, I just too lazy to follow this guy instructions
+    I just want go straight to github page and edit my index.html file 
+    index.html is at main branch which is at https://github.com/user_name/my_repo/branches
+    </div>
+  
 <div class="entry">
 <h2>AppImage on Ubuntu</h2>
 <pre><code>sudo apt install libfuse2
