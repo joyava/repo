@@ -407,6 +407,55 @@ done
 <li>I reserved 200G for Windows, 200G for CachyOS, and 200G for Antix (from unallocated space).</li>
 </ul>
 </div>
+
+<div class="entry">
+<h2>How to make iso in CachyOS Linux?</h2>
+<ul>
+<li>CachyOS-Live-ISO:
+<a href="https://github.com/CachyOS/CachyOS-Live-ISO" target="_blank"> Visit GitHub.</a> </li>
+<li>CachyOS often requires Secure Boot to be disabled for custom ISOs to boot properly.</li>
+</ul>
+</div>
+
+<div class="entry">
+<h2>Terminal:</h2>
+<ul>
+<pre><code>
+sudo pacman -Syy
+sudo pacman -S archiso mkinitcpio-archiso git squashfs-tools grub --needed
+git clone https://github.com/cachyos/cachyos-live-iso.git cachyos-archiso
+cd cachyos-archiso
+
+sudo ./buildiso.sh -p desktop -v -w
+
+xorriso : UPDATE :  95.17% done, estimate finish Sun Apr 05 11:03:37 2026
+xorriso : UPDATE :  96.04% done, estimate finish Sun Apr 05 11:03:37 2026
+xorriso : UPDATE :  97.14% done, estimate finish Sun Apr 05 11:03:37 2026
+xorriso : UPDATE :  98.47% done
+xorriso : UPDATE :  98.49% done
+xorriso : UPDATE :  99.20% done
+ISO image produced: 1495056 sectors
+Written to medium : 1495056 sectors at LBA 0
+Writing to 'stdio:/home/joy/cachyos-archiso/out/desktop/cachyos-2026.04.05-x86_64.iso' completed successfully.
+
+[mkarchiso] INFO: Done!
+2.9G	/home/joy/cachyos-archiso/out/desktop/cachyos-2026.04.05-x86_64.iso
+==> Done [Build ISO] cachyos-desktop-linux-260405.iso
+==> Finished building [desktop]
+  -> creating checksums for [cachyos-desktop-linux-260405.iso]
+  -> signing [cachyos-desktop-linux-260405.iso] with key
+gpg: directory '/root/.gnupg' created
+gpg: no default secret key: No secret key
+gpg: signing failed: No secret key
+ --> Time run_build: 60.88 minutes
+==> Automatically removing build directory (/home/joy/cachyos-archiso/build)...
+  -> Removed
+[joy@grub cachyos-archiso]$
+  
+</code></pre>
+</ul>
+<li>As the result iso appears at the out folder.</li>
+</div>
   
 </div>
 
