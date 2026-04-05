@@ -258,7 +258,7 @@ sudo ntpdate pool.ntp.org</code></pre>
 <div class="entry">
 <h2>Quick System Update Alias</h2>
 <pre><code>alias update='sudo apt update && sudo apt upgrade -y'</code></pre>
-<li>Example: ddd this line to ~/.bashrc</li>
+<li>Example: edit ~/.bashrc</li>
         <li>alias update='sudo apt update && sudo apt upgrade -y' </li>
         <li>Source ~/.bashrc</li>
         <li>$ ./update </li>
@@ -287,10 +287,9 @@ sudo ntpdate pool.ntp.org</code></pre>
 
 <div class="entry">
 <h2>Which linux distro boot the fastest?</h2>
-<p>Answer: on my old computer, Antix distro is the winner in fastest boot category
-   Only .deb and .appimage apps work on Antix
-   Other Flatpak and Snap apps don't work on Antix
-   Steam games don't work on Antix
+<p>Answer: on my old computer, Antix distro is the winner in fastest boot category.
+   These apps (.deb and .appimage) work on Antix.
+   These apps (Flatpak and Snap) don't work on Antix.
    I can make it work, but dependencies will slow it down.
 </p>
 
@@ -298,11 +297,11 @@ sudo ntpdate pool.ntp.org</code></pre>
 
 <div class="entry">
 <h2>DeepSeek 671B (Local Experiment)</h2>
-<p>Running large models locally using swap is extremely slow and wears out SSDs quickly.
+<p>Running LLM models locally using swap is extremely slow and wears out SSDs quickly.
 Some people do this because they don't have a lot of RAM.
-Example of use: buy 2 TB SSD and set 1TB for swap. Then: ollama run Deepseek-R1:671b
-From prompt to first output token, it takes 15 min. Meaning: you wait for 8 hours.
-Meaning: after 100-200 queries, your ssd is permanently damaged. 
+Example: buy 2 TB SSD and set 1TB for swap. Then: ollama run Deepseek-R1:671b
+From prompt to first output token, it takes 15 min. Meaning: you wait for 8 hours (slow).
+Meaning: after 100ish queries, your ssd will be permanently damage (wear out).
 </p>
 </div>
 
@@ -329,17 +328,15 @@ Meaning: after 100-200 queries, your ssd is permanently damaged.
 <div class="entry">
 <h2>How to grep the easy way?</h2>
 <ul>
-<li>Download DocFetcher: 
-<a href="https://https://www.makeuseof.com/docfetcher-find-every-document-at-work/" target="_blank">Visit makeuseof.com</a> </li>
-<li>Alternative app is Clapgrep.</li>
-<li>You can down load DocFetcher from flatpak appstore (Bazaar).</li>
-<li>GUI alternative: AnyTXT Searcher, Recoll, Agent Ransack / FileLocator Pro, X1 Search.</li>
+<li>You can download DocFetcher from flatpak appstore (Bazaar).</li>
+<a href="https://https://www.makeuseof.com/docfetcher-find-every-document-at-work/" target="_blank"> Visit makeuseof</a> </li>
+<li>GUI alternative: Clapgrep, AnyTXT Searcher, Recoll, Agent Ransack / FileLocator Pro, X1 Search.</li>
 <li>CLI alternative: rga (ripgrep-all), grepWin, ugrep.</li>
 </ul>
 </div>
 
 <div class="entry">
-<h2>How to transfer file between Virtualbox and your PC? </h2>
+<h2>How to transfer file between Virtualbox and PC? </h2>
 <ul>
 <li>Use localsend app and change network from NAB to bridge </li>
 </ul>
@@ -348,7 +345,7 @@ Meaning: after 100-200 queries, your ssd is permanently damaged.
 <div class="entry">
 <h2>How to install VirtualBox the easy way?</h2>
 <ul>
-<li><a href="https://github.com/ivan-hc/VirtualBox-appimage" target="_blank">Visit makeuseof</a> </li>
+<li><a href="https://github.com/ivan-hc/VirtualBox-appimage" target="_blank">Visit github.</a> </li>
 </ul>
 </div>
 
@@ -392,28 +389,28 @@ done
 </div>
 
 <div class="entry">
-<h2>How to dualboot CachyOS with Windows?</h2>
+<h2>How to triple boot Windows, CachyOS, and Antix linux?</h2>
 <ul>
 <li>Review by other:
 <a href="https://www.xda-developers.com/cachyos-one-click-windows-vm-button-dual-booting-feels-completely-outdated/" target="_blank">Click here.</a> </li>
 <li>Review by me:</li>
-<li>From Windows, I shrink down some unallocated space.</li>
+<li>From Windows, I shrink down current partition and reserve 100 GB of unallocated space for Antix.</li>
 <li>Then, I install CachyOS along side Windows, and let it run automatically.</li>
-<li>I reserved 200G for Windows, 200G for CachyOS, and 200G for Antix (from unallocated space).</li>
+<li>Then, I prepair and install antix into that 100 GB of space.</li>
 </ul>
 </div>
 
 <div class="entry">
-<h2>How to make iso in CachyOS Linux?</h2>
+<h2>How to make an iso from current CachyOS Linux?</h2>
 <ul>
-<li>CachyOS-Live-ISO script :
-<a href="https://github.com/CachyOS/CachyOS-Live-ISO" target="_blank"> Download at GitHub.</a> </li>
-<li>CachyOS often requires Secure Boot to be disabled for custom ISOs to boot properly.</li>
+<li>Download CachyOS-Live-ISO script at :
+<a href="https://github.com/CachyOS/CachyOS-Live-ISO" target="_blank"> GitHub.</a> </li>
+<li>Note: CachyOS requires Secure Boot to be disabled for custom ISOs to boot properly.</li>
 </ul>
 </div>
 
 <div class="entry">
-<h2>Terminal:</h2>
+<h2>On your Terminal do this:</h2>
 <ul>
 <pre><code>
 sudo pacman -Syy
